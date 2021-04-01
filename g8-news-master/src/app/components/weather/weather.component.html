@@ -1,0 +1,41 @@
+
+    <div id="weather-bar" class="navbar-expand-lg navbar-dark " >
+        <div id="weather-container" class="container">
+          <div class="weather-section">
+            <span class="navbar-text" >
+                <h6 *ngIf="description">Weather</h6>
+            </span>
+          </div>
+
+          <div class="weather-section">
+            <span class="navbar-text" >
+                <h6>{{description}}</h6>
+            </span>
+          </div>
+
+          <div class="weather-section">
+            <span class="navbar-text">
+                <img src={{imageUrl}}>
+            </span>
+          </div>
+
+          <div class="weather-section">
+            <span class="navbar-text">
+                <h6 *ngIf="tempF">{{tempF}}<sup>F</sup></h6>
+            </span>
+          </div>
+
+          <div class="weather-section">
+            <span class="navbar-text" >
+                <h6 >{{location}}</h6>
+            </span>
+          </div>
+
+          <!-- <div class="weather-section">
+            <span class="navbar-text">
+                <h6>{{date}}</h6>
+            </span>
+          </div> -->
+
+        </div>
+    </div>
